@@ -1,0 +1,10 @@
+<script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+<script src='/js/script.js'></script>
+<form name='uploadForm' class="flex flex-col">
+  <input type="text" name='comment' placeholder='Введите комментарий'
+    class='h-10 border-pink-800 border-2 text-center m-2'>
+  <input type="file" id='content' class="m-4 text-pink-800 w-72 mx-auto">
+  <div class=" bg-pink-200 text-center w-36 mx-auto m-4">Progress: <span id="progress"></span></div>
+  <button type="submit"
+    class="bg-pink-500 text-xl py-2 px-3 shadow-xl rounded-xl hover:bg-pink-600 w-36 mx-auto my-2">Отправить!</button>
+</form>

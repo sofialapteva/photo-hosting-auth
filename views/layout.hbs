@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uploader</title>
+</head>
+<nav
+  class="text-lg md:text-xl lg:text-2xl h-14 bg-pink-600 mb-4 uppercase flex justify-around items-center font-bold text-center">
+  <a href="/"> <img src="/f.ico" class="h-14"> </a>
+  {{#if login}}
+    <a href="/upload">Upload a pic</a>
+    I know you, you are {{login}}
+    <a href="/user/logout">log outta here</a>
+  {{else}}
+    <a href="/user/login">login</a>
+    <a href="/user/register">register</a>
+  {{/if}}
+</nav>
+
+<body>
+  <div class='container w-9/12 mx-auto '>
+    {{{body}}}
+  </div>
+</body>
+
+</html>
